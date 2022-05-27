@@ -1,9 +1,0 @@
-AWS_ACCESS_KEY = "AKIAQFNKTJ4HHUZLAYNO"
-AWS_SECRET_KEY = "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"
-region         = "ap-southeast-1"
-environment    = "PinkCloud"
-vpc_cidr       = "10.0.0.0/16"
-public_subnets_cidr = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
-private_subnets_cidr = ["10.0.10.0/24", "10.0.11.0/24", "10.0.12.0/24"]
-ami                 = "ami-04d9e855d716f9c99"
-key_name = "KeyPem"
