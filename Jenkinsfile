@@ -3,9 +3,6 @@ pipeline {
   options {
     skipDefaultCheckout(true)
   }
-  tools{
-    terraform 'TerraformTestDeploy'
-  }
   stages{
     stage('clean workspace') {
       steps {
@@ -19,10 +16,7 @@ pipeline {
     }
     stage('terraform') {
       steps {
-        sh 'terraform init'
-        sh 'terraform apply -auto-approve'
-        //sh 'terraform apply -var-file variables.tfvars'
-        //sh 'yes'
+        sh './terraformw apply -auto-approve -no-color'
       }
     }
   }
