@@ -1,0 +1,5 @@
+AWS_ACCESS_KEY  = "AKIAQFNKTJ4HHUZLAYNO"
+AWS_SECRET_KEY  = "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"
+enviroment      = "PinkCloud"
+vpc_cidr        = "10.0.0.0/16"
+region          = "ap-southeast-1"
