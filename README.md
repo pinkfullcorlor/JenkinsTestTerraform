@@ -1,1 +1,1 @@
-# JenkinsTestTerraform
+# jenkins-example-terraform
