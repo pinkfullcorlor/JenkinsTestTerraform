@@ -20,7 +20,9 @@ pipeline {
     stage('terraform') {
       steps {
         sh 'terraform init'
-        sh 'terraform apply -auto-approve'
+        // sh 'terraform apply -auto-approve'
+        sh 'terraform apply -var-file vatiables.tfvars'
+        sh 'yes'
       }
     }
   }
