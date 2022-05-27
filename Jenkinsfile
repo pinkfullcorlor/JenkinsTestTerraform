@@ -21,7 +21,7 @@ pipeline {
       steps {
         sh 'terraform init'
         // sh 'terraform apply -auto-approve'
-        sh 'terraform apply -var-file vatiables.tfvars'
+        sh 'terraform apply -var-file variables.tfvars'
         sh 'yes'
       }
     }
