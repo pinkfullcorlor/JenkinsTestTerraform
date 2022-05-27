@@ -21,8 +21,7 @@ pipeline {
       steps {
         //sh './terraformw apply -auto-approve -no-color'\
         sh 'terraform init'
-        sh 'terraform plan -var-file terraform.tfvars'
-        sh 'terraform destroy -auto-approve'
+        sh 'terraform apply -auto-approve'
       }
     }
   }
