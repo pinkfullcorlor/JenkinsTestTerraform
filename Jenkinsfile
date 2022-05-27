@@ -3,6 +3,9 @@ pipeline {
   options {
     skipDefaultCheckout(true)
   }
+  tools{
+    terraform 'TerraformTestDeploy'
+  }
   stages{
     stage('clean workspace') {
       steps {
