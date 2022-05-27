@@ -1,5 +1,2 @@
 install.sh
 .bin/
-.terraform
-*.tfstate
-*.tfstate.backup
